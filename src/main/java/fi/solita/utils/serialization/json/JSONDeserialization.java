@@ -38,8 +38,6 @@ import fi.solita.utils.functional.Tuple18;
 import fi.solita.utils.functional.Tuple19;
 import fi.solita.utils.functional.Tuple2;
 import fi.solita.utils.functional.Tuple20;
-import fi.solita.utils.functional.Tuple21;
-import fi.solita.utils.functional.Tuple22;
 import fi.solita.utils.functional.Tuple3;
 import fi.solita.utils.functional.Tuple4;
 import fi.solita.utils.functional.Tuple5;
@@ -647,61 +645,6 @@ public abstract class JSONDeserialization {
             FieldDeserializer<JSON, ? super T,F20,JSONStr> field20,
             Apply<? extends Tuple20<? super F1,? super F2,? super F3,? super F4,? super F5,? super F6,? super F7,? super F8,? super F9,? super F10,? super F11,? super F12,? super F13,? super F14,? super F15,? super F16,? super F17,? super F18,? super F19,? super F20>,T> constructor) {
         return objectUnsafe(newList(field1, field2, field3, field4, field5, field6, field7, field8, field9, field10, field11, field12, field13, field14, field15, field16, field17, field18, field19, field20), constructor);
-    }
-    
-    @SuppressWarnings("unchecked")
-    public static final <T,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21> JSONDeserializer<T> object(
-            FieldDeserializer<JSON, ? super T,F1,JSONStr> field1,
-            FieldDeserializer<JSON, ? super T,F2,JSONStr> field2,
-            FieldDeserializer<JSON, ? super T,F3,JSONStr> field3,
-            FieldDeserializer<JSON, ? super T,F4,JSONStr> field4,
-            FieldDeserializer<JSON, ? super T,F5,JSONStr> field5,
-            FieldDeserializer<JSON, ? super T,F6,JSONStr> field6,
-            FieldDeserializer<JSON, ? super T,F7,JSONStr> field7,
-            FieldDeserializer<JSON, ? super T,F8,JSONStr> field8,
-            FieldDeserializer<JSON, ? super T,F9,JSONStr> field9,
-            FieldDeserializer<JSON, ? super T,F10,JSONStr> field10,
-            FieldDeserializer<JSON, ? super T,F11,JSONStr> field11,
-            FieldDeserializer<JSON, ? super T,F12,JSONStr> field12,
-            FieldDeserializer<JSON, ? super T,F13,JSONStr> field13,
-            FieldDeserializer<JSON, ? super T,F14,JSONStr> field14,
-            FieldDeserializer<JSON, ? super T,F15,JSONStr> field15,
-            FieldDeserializer<JSON, ? super T,F16,JSONStr> field16,
-            FieldDeserializer<JSON, ? super T,F17,JSONStr> field17,
-            FieldDeserializer<JSON, ? super T,F18,JSONStr> field18,
-            FieldDeserializer<JSON, ? super T,F19,JSONStr> field19,
-            FieldDeserializer<JSON, ? super T,F20,JSONStr> field20,
-            FieldDeserializer<JSON, ? super T,F21,JSONStr> field21,
-            Apply<? extends Tuple21<? super F1,? super F2,? super F3,? super F4,? super F5,? super F6,? super F7,? super F8,? super F9,? super F10,? super F11,? super F12,? super F13,? super F14,? super F15,? super F16,? super F17,? super F18,? super F19,? super F20,? super F21>,T> constructor) {
-        return objectUnsafe(newList(field1, field2, field3, field4, field5, field6, field7, field8, field9, field10, field11, field12, field13, field14, field15, field16, field17, field18, field19, field20, field21), constructor);
-    }
-    
-    @SuppressWarnings("unchecked")
-    public static final <T,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21,F22> JSONDeserializer<T> object(
-            FieldDeserializer<JSON, ? super T,F1,JSONStr> field1,
-            FieldDeserializer<JSON, ? super T,F2,JSONStr> field2,
-            FieldDeserializer<JSON, ? super T,F3,JSONStr> field3,
-            FieldDeserializer<JSON, ? super T,F4,JSONStr> field4,
-            FieldDeserializer<JSON, ? super T,F5,JSONStr> field5,
-            FieldDeserializer<JSON, ? super T,F6,JSONStr> field6,
-            FieldDeserializer<JSON, ? super T,F7,JSONStr> field7,
-            FieldDeserializer<JSON, ? super T,F8,JSONStr> field8,
-            FieldDeserializer<JSON, ? super T,F9,JSONStr> field9,
-            FieldDeserializer<JSON, ? super T,F10,JSONStr> field10,
-            FieldDeserializer<JSON, ? super T,F11,JSONStr> field11,
-            FieldDeserializer<JSON, ? super T,F12,JSONStr> field12,
-            FieldDeserializer<JSON, ? super T,F13,JSONStr> field13,
-            FieldDeserializer<JSON, ? super T,F14,JSONStr> field14,
-            FieldDeserializer<JSON, ? super T,F15,JSONStr> field15,
-            FieldDeserializer<JSON, ? super T,F16,JSONStr> field16,
-            FieldDeserializer<JSON, ? super T,F17,JSONStr> field17,
-            FieldDeserializer<JSON, ? super T,F18,JSONStr> field18,
-            FieldDeserializer<JSON, ? super T,F19,JSONStr> field19,
-            FieldDeserializer<JSON, ? super T,F20,JSONStr> field20,
-            FieldDeserializer<JSON, ? super T,F21,JSONStr> field21,
-            FieldDeserializer<JSON, ? super T,F22,JSONStr> field22,
-            Apply<? extends Tuple22<? super F1,? super F2,? super F3,? super F4,? super F5,? super F6,? super F7,? super F8,? super F9,? super F10,? super F11,? super F12,? super F13,? super F14,? super F15,? super F16,? super F17,? super F18,? super F19,? super F20,? super F21,? super F22>,T> constructor) {
-        return objectUnsafe(newList(field1, field2, field3, field4, field5, field6, field7, field8, field9, field10, field11, field12, field13, field14, field15, field16, field17, field18, field19, field20, field21, field22), constructor);
     }
     
     public static final <T> JSONDeserializer<T> objectUnsafe(final Iterable<? extends FieldDeserializer<JSON,? extends Object,?,JSONStr>> fields, final Apply<? extends Tuple,T> constructor) {
