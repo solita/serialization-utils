@@ -1,10 +1,13 @@
 package fi.solita.utils.serialization;
 
 import static fi.solita.utils.functional.Collections.newList;
+
+import java.io.Serializable;
+
 import fi.solita.utils.functional.Either;
 
-public interface Deserializer<FORMAT, SERIAL_REPRESENTATION, TARGET_TYPE> {
-    public static final class Failure<T> {
+public interface Deserializer<FORMAT, TARGET_TYPE, SERIAL_REPRESENTATION> extends Serializable {
+    public static final class Failure<T> implements Serializable {
         /**
          * An <i>invalid</i> result object, if one could be constructed from partial data.
          * This little beast may even be <i>null</i>, which in this case represents

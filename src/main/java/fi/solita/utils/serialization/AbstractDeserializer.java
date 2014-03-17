@@ -3,7 +3,7 @@ package fi.solita.utils.serialization;
 import fi.solita.utils.functional.Either;
 import fi.solita.utils.serialization.Deserializer;
 
-public abstract class AbstractDeserializer<FORMAT, SERIAL_REPRESENTATION, TARGET_TYPE> implements Deserializer<FORMAT, SERIAL_REPRESENTATION, TARGET_TYPE> {
+public abstract class AbstractDeserializer<FORMAT, TARGET_TYPE, SERIAL_REPRESENTATION> implements Deserializer<FORMAT, TARGET_TYPE, SERIAL_REPRESENTATION> {
     /**
      * if you override this, be sure to wrap all exceptions to a {@link Failure}.
      */

@@ -1,9 +1,11 @@
 package fi.solita.utils.serialization.json;
 
+import java.io.Serializable;
+
 /**
  * JSON serial format. Just a wrapper for String.
  */
-public final class JSONStr implements CharSequence {
+public final class JSONStr implements CharSequence, Serializable {
     private final CharSequence json;
 
     public JSONStr(CharSequence json) {

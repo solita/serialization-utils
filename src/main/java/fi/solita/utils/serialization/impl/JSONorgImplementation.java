@@ -4,6 +4,7 @@ import static fi.solita.utils.functional.Collections.newList;
 import static fi.solita.utils.functional.Collections.newMapOfSize;
 import static fi.solita.utils.functional.Functional.map;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Map;
@@ -21,7 +22,7 @@ import fi.solita.utils.serialization.json.JSONStr;
  * JSON serialization/deserialization low-level implementation
  * using the library from json.org. Which sucks, so you should probably make a new one...
  */
-public class JSONorgImplementation extends JSON {
+public class JSONorgImplementation extends JSON implements Serializable {
     
     @Override
     public JSONStr toJSON(String object) {
